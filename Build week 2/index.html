@@ -1,97 +1,142 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Airbnb Navbar - Pixel Perfect</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Circular:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Circular:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 </head>
+
+
 <body>
 
-<header class="desktop-header">
-    <div class="container-fluid">
-        <div class="row align-items-center w-100 g-0">
-            <div class="col-lg-4">
-                <a href="#" aria-label="Homepage">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1024px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="Airbnb" class="airbnb-logo">
-                </a>
-            </div>
-            <div class="col-lg-4">
-                <nav class="nav-tabs-center">
-                    <a href="#" class="nav-tab-item active">
-                        <svg class="nav-tab-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M508.971,158.135v61.605L284.476,57.981L59.98,219.74v-61.605L267.316,8.617 c10.383-7.432,23.936-7.432,34.319,0L508.971,158.135z"/>
-                            <path d="M470.954,183.995v282.202H98.002V175.995L284.479,49.638L470.954,183.995z"/>
-                            <rect x="145.586" y="298.935" width="143.83" height="108.188"/>
-                            <rect x="331.442" y="298.935" width="99.924" height="167.222"/>
-                        </svg>
-                        Alloggi
+    <header class="desktop-header">
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center w-100 g-0">
+                <div class="col-lg-4">
+                    <a href="#" aria-label="Homepage">
+                        <img src="./assets/logo-pink.png" alt="Airbnb" class="airbnb-logo">
                     </a>
-                    <a href="#" class="nav-tab-item">
-                        <svg class="nav-tab-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4V5.23906C17.5964 6.12596 20.25 9.37719 20.25 13.2482C20.25 13.6625 19.9142 13.9982 19.5 13.9982H4.5C4.08579 13.9982 3.75 13.6625 3.75 13.2482C3.75 9.38757 6.41773 6.1499 10 5.24922V4ZM13.25 7.5C12.8358 7.5 12.5 7.83579 12.5 8.25C12.5 8.66421 12.8358 9 13.25 9C14.5032 9 15.3927 9.61836 16.1355 10.68C16.3729 11.0193 16.8406 11.102 17.18 10.8645C17.5193 10.6271 17.602 10.1594 17.3645 9.82004C16.4346 8.49093 15.136 7.5 13.25 7.5Z"/>
-                            <path d="M2 17C2 15.8954 2.89543 15 4 15H20C21.1046 15 22 15.8954 22 17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z"/>
-                        </svg>
-                        Esperienze
-                    </a>
-                    <a href="#" class="nav-tab-item">
-                        <svg class="nav-tab-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M250.366,0.048c-5.086,2.391-11.983,6.125-19.577,11.601c-20.625,14.867-36.383,34.89-46.827,59.514 c-13.875,32.703-17.828,72.749-11.734,119.021c7.367,55.952,29.483,131.778,65.765,204.465h35.999 c36.28-72.687,58.404-148.513,65.764-204.465c6.094-46.272,2.141-86.318-11.734-119.021c-10.438-24.624-26.202-44.647-46.826-59.514 c-7.578-5.469-14.477-9.195-19.555-11.585c-1.867-0.039-3.742-0.062-5.648-0.062C254.093,0.001,252.225,0.017,250.366,0.048z"/>
-                            <path d="M309.334,511.991H202.656c-5.891,0-10.664-4.781-10.664-10.656v-63.999 c0-5.906,4.773-10.688,10.664-10.688h106.678c5.875,0,10.655,4.781,10.655,10.688v63.999 C319.989,507.21,315.209,511.991,309.334,511.991z"/>
-                        </svg>
-                        Esperienze Online
-                    </a>
-                </nav>
-            </div>
-            <div class="col-lg-4">
-                <div class="right-menu">
-                    <button class="btn-inizia">Diventa un host</button>
-                    <button class="btn-globe" aria-label="Scegli lingua e valuta">
-                        <ion-icon name="globe"></ion-icon>
-                    </button>
-                    <div class="user-menu-wrapper" role="button" aria-label="Menu utente">
-                        <ion-icon name="menu"></ion-icon>
+                </div>
+
+                <div class="col-lg-4">
+
+                    <nav class="nav-tabs-center">
+                        <a href="#" class="nav-tab-item active">
+
+                            <i class="fa fa-home"></i>
+
+                            <svg class="nav-tab-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M508.971,158.135v61.605L284.476,57.981L59.98,219.74v-61.605L267.316,8.617 c10.383-7.432,23.936-7.432,34.319,0L508.971,158.135z" />
+                                <path d="M470.954,183.995v282.202H98.002V175.995L284.479,49.638L470.954,183.995z" />
+                                <rect x="145.586" y="298.935" width="143.83" height="108.188" />
+                                <rect x="331.442" y="298.935" width="99.924" height="167.222" />
+                            </svg>
+
+
+                            Alloggi
+
+                        </a>
+                        <a href="#" class="nav-tab-item">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <svg class="nav-tab-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4V5.23906C17.5964 6.12596 20.25 9.37719 20.25 13.2482C20.25 13.6625 19.9142 13.9982 19.5 13.9982H4.5C4.08579 13.9982 3.75 13.6625 3.75 13.2482C3.75 9.38757 6.41773 6.1499 10 5.24922V4ZM13.25 7.5C12.8358 7.5 12.5 7.83579 12.5 8.25C12.5 8.66421 12.8358 9 13.25 9C14.5032 9 15.3927 9.61836 16.1355 10.68C16.3729 11.0193 16.8406 11.102 17.18 10.8645C17.5193 10.6271 17.602 10.1594 17.3645 9.82004C16.4346 8.49093 15.136 7.5 13.25 7.5Z" />
+                                <path
+                                    d="M2 17C2 15.8954 2.89543 15 4 15H20C21.1046 15 22 15.8954 22 17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" />
+                            </svg>
+
+                            Esperienze
+
+                        </a>
+                        <a href="#" class="nav-tab-item">
+
+                            <i class="fa-solid fa-bell"></i>
+
+                            <svg class="nav-tab-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M250.366,0.048c-5.086,2.391-11.983,6.125-19.577,11.601c-20.625,14.867-36.383,34.89-46.827,59.514 c-13.875,32.703-17.828,72.749-11.734,119.021c7.367,55.952,29.483,131.778,65.765,204.465h35.999 c36.28-72.687,58.404-148.513,65.764-204.465c6.094-46.272,2.141-86.318-11.734-119.021c-10.438-24.624-26.202-44.647-46.826-59.514 c-7.578-5.469-14.477-9.195-19.555-11.585c-1.867-0.039-3.742-0.062-5.648-0.062C254.093,0.001,252.225,0.017,250.366,0.048z" />
+                                <path
+                                    d="M309.334,511.991H202.656c-5.891,0-10.664-4.781-10.664-10.656v-63.999 c0-5.906,4.773-10.688,10.664-10.688h106.678c5.875,0,10.655,4.781,10.655,10.688v63.999 C319.989,507.21,315.209,511.991,309.334,511.991z" />
+                            </svg>
+
+                            Servizi
+
+                        </a>
+
+                    </nav>
+
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="right-menu">
+                        <button class="btn-inizia">Diventa un host</button>
+                        <button class="btn-globe" aria-label="Scegli lingua e valuta">
+                            <ion-icon name="globe"></ion-icon>
+                        </button>
+                        <div class="user-menu-wrapper" role="button" aria-label="Menu utente">
+                            <ion-icon name="menu"></ion-icon>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<section class="search-section">
-    <div class="search-wrapper">
-        <div class="search-box">
-            <div class="search-field">
-                <div class="search-field-title">Dove</div>
-                <div class="search-field-text">Cerca destinazioni</div>
+    <section class="search-section">
+
+        <div class="search-wrapper">
+            <div class="search-box">
+
+                <div class="search-field">
+                    <div class="search-field-title">Dove</div>
+                    <div class="search-field-text">Cerca destinazioni</div>
+                </div>
+                <div class="search-field">
+                    <div class="search-field-title">Check-in</div>
+                    <div class="search-field-text">Aggiungi date</div>
+                </div>
+                <div class="search-field">
+                    <div class="search-field-title">Check-out</div>
+                    <div class="search-field-text">Aggiungi date</div>
+                </div>
+                <div class="search-field">
+                    <div class="search-field-title">Chi</div>
+                    <div class="search-field-text">Aggiungi ospiti</div>
+                </div>
+
+                <button class="btn-search" aria-label="Cerca">
+                    <svg viewBox="0 0 32 32" style="fill:none;stroke:white;stroke-width:4">
+                        <path d="m13 24c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11 4.925 11 11 11zm8-3 9 9">
+                        </path>
+                    </svg>
+                </button>
+
             </div>
-            <div class="search-field">
-                <div class="search-field-title">Check-in</div>
-                <div class="search-field-text">Aggiungi date</div>
-            </div>
-            <div class="search-field">
-                <div class="search-field-title">Check-out</div>
-                <div class="search-field-text">Aggiungi date</div>
-            </div>
-            <div class="search-field">
-                <div class="search-field-title">Chi</div>
-                <div class="search-field-text">Aggiungi ospiti</div>
-            </div>
-            <button class="btn-search" aria-label="Cerca">
-                <svg viewBox="0 0 32 32" style="fill:none;stroke:white;stroke-width:4">
-                    <path d="m13 24c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11 4.925 11 11 11zm8-3 9 9"></path>
-                </svg>
-            </button>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- MOBILE VERSION -->
-<header class="mobile-header">
+
     <div class="search-compact">
+
         <svg class="search-compact-icon" viewBox="0 0 32 32" style="fill:currentColor">
             <path d="m13 24c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11 4.925 11 11 11zm8-3 9 9"></path>
         </svg>
@@ -99,33 +144,326 @@
     </div>
 
     <nav class="nav-tabs-center mobile-nav-links">
+
         <a href="#" class="nav-tab-item active">
             <svg class="nav-tab-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <path d="M508.971,158.135v61.605L284.476,57.981L59.98,219.74v-61.605L267.316,8.617 c10.383-7.432,23.936-7.432,34.319,0L508.971,158.135z"/>
-                <path d="M470.954,183.995v282.202H98.002V175.995L284.479,49.638L470.954,183.995z"/>
-                <rect x="145.586" y="298.935" width="143.83" height="108.188"/>
-                <rect x="331.442" y="298.935" width="99.924" height="167.222"/>
+                <path
+                    d="M508.971,158.135v61.605L284.476,57.981L59.98,219.74v-61.605L267.316,8.617 c10.383-7.432,23.936-7.432,34.319,0L508.971,158.135z" />
+                <path d="M470.954,183.995v282.202H98.002V175.995L284.479,49.638L470.954,183.995z" />
+                <rect x="145.586" y="298.935" width="143.83" height="108.188" />
+                <rect x="331.442" y="298.935" width="99.924" height="167.222" />
             </svg>
             Alloggi
         </a>
+
         <a href="#" class="nav-tab-item">
             <svg class="nav-tab-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4V5.23906C17.5964 6.12596 20.25 9.37719 20.25 13.2482C20.25 13.6625 19.9142 13.9982 19.5 13.9982H4.5C4.08579 13.9982 3.75 13.6625 3.75 13.2482C3.75 9.38757 6.41773 6.1499 10 5.24922V4ZM13.25 7.5C12.8358 7.5 12.5 7.83579 12.5 8.25C12.5 8.66421 12.8358 9 13.25 9C14.5032 9 15.3927 9.61836 16.1355 10.68C16.3729 11.0193 16.8406 11.102 17.18 10.8645C17.5193 10.6271 17.602 10.1594 17.3645 9.82004C16.4346 8.49093 15.136 7.5 13.25 7.5Z"/>
-                <path d="M2 17C2 15.8954 2.89543 15 4 15H20C21.1046 15 22 15.8954 22 17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z"/>
+                <path
+                    d="M10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4V5.23906C17.5964 6.12596 20.25 9.37719 20.25 13.2482C20.25 13.6625 19.9142 13.9982 19.5 13.9982H4.5C4.08579 13.9982 3.75 13.6625 3.75 13.2482C3.75 9.38757 6.41773 6.1499 10 5.24922V4ZM13.25 7.5C12.8358 7.5 12.5 7.83579 12.5 8.25C12.5 8.66421 12.8358 9 13.25 9C14.5032 9 15.3927 9.61836 16.1355 10.68C16.3729 11.0193 16.8406 11.102 17.18 10.8645C17.5193 10.6271 17.602 10.1594 17.3645 9.82004C16.4346 8.49093 15.136 7.5 13.25 7.5Z" />
+                <path
+                    d="M2 17C2 15.8954 2.89543 15 4 15H20C21.1046 15 22 15.8954 22 17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" />
             </svg>
             Esperienze
         </a>
+
         <a href="#" class="nav-tab-item">
             <svg class="nav-tab-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <path d="M250.366,0.048c-5.086,2.391-11.983,6.125-19.577,11.601c-20.625,14.867-36.383,34.89-46.827,59.514 c-13.875,32.703-17.828,72.749-11.734,119.021c7.367,55.952,29.483,131.778,65.765,204.465h35.999 c36.28-72.687,58.404-148.513,65.764-204.465c6.094-46.272,2.141-86.318-11.734-119.021c-10.438-24.624-26.202-44.647-46.826-59.514 c-7.578-5.469-14.477-9.195-19.555-11.585c-1.867-0.039-3.742-0.062-5.648-0.062C254.093,0.001,252.225,0.017,250.366,0.048z"/>
-                <path d="M309.334,511.991H202.656c-5.891,0-10.664-4.781-10.664-10.656v-63.999 c0-5.906,4.773-10.688,10.664-10.688h106.678c5.875,0,10.655,4.781,10.655,10.688v63.999 C319.989,507.21,315.209,511.991,309.334,511.991z"/>
+                <path
+                    d="M250.366,0.048c-5.086,2.391-11.983,6.125-19.577,11.601c-20.625,14.867-36.383,34.89-46.827,59.514 c-13.875,32.703-17.828,72.749-11.734,119.021c7.367,55.952,29.483,131.778,65.765,204.465h35.999 c36.28-72.687,58.404-148.513,65.764-204.465c6.094-46.272,2.141-86.318-11.734-119.021c-10.438-24.624-26.202-44.647-46.826-59.514 c-7.578-5.469-14.477-9.195-19.555-11.585c-1.867-0.039-3.742-0.062-5.648-0.062C254.093,0.001,252.225,0.017,250.366,0.048z" />
+                <path
+                    d="M309.334,511.991H202.656c-5.891,0-10.664-4.781-10.664-10.656v-63.999 c0-5.906,4.773-10.688,10.664-10.688h106.678c5.875,0,10.655,4.781,10.655,10.688v63.999 C319.989,507.21,315.209,511.991,309.334,511.991z" />
             </svg>
             Servizi
         </a>
-    </nav>
-</header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz4YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </nav>
+
+
+
+
+    <section class="bg-light border-top">
+
+        <div class="container">
+            <h2 class="title-footer pt-4">Ispirazione per viaggi futuri</h2>
+        </div>
+
+        <div class="container border-bottom">
+            <div class="d-flex flex-nowrap overflow-auto pb-0">
+                <a href="#" class="nav-link px-3 active">Popolari</a>
+                <a href="#" class="nav-link px-3">Sul litorale</a>
+                <a href="#" class="nav-link px-3">Destinazioni storiche</a>
+                <a href="#" class="nav-link px-3">Isole</a>
+                <a href="#" class="nav-link px-3">Montagne</a>
+                <a href="#" class="nav-link px-3">Attività</a>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Monaco di Baviera</strong>
+                        <small class="text-muted">Case vacanze</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Trieste</strong>
+                        <small class="text-muted">Soggiorni in case</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">La Spezia</strong>
+                        <small class="text-muted">Case vacanze</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Tirana</strong>
+                        <small class="text-muted">Soggiorni in case</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Merano</strong>
+                        <small class="text-muted">Soggiorni in ville</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">San Vito Lo Capo</strong>
+                        <small class="text-muted">Soggiorni in appartamenti</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Assisi</strong>
+                        <small class="text-muted">Soggiorni in appartamenti</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Copenaghen</strong> <small class="text-muted">Soggiorni in
+                            ville</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Assisi</strong> <small class="text-muted">Soggiorni in
+                            appartamenti</small>
+                    </a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Lugano</strong> <small class="text-muted">Soggiorni in
+                            appartamenti</small>
+                    </a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Bormio</strong> <small class="text-muted">Case vacanze</small>
+                    </a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Bologna</strong> <small class="text-muted">Soggiorni
+                            in appartamenti</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Genova</strong> <small class="text-muted">Case
+                            vacanze</small>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Alghero</strong> <small class="text-muted">Soggiorni in
+                            appartamenti</small>
+                    </a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Reggio Emilia</strong> <small class="text-muted">Soggiorni in
+                            case</small>
+                    </a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Sirmione</strong>
+                        <small class="text-muted">Soggiorni in
+                            appartamenti</small>
+                    </a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none">
+                        <strong class="text-dark d-block">Provincia di
+                            Ferrara</strong> <small class="text-muted">Soggiorni in
+                            appartamenti</small></a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-decoration-none fw-bold text-dark">Mostra
+                        altro ▼</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-light text-dark pt-4 pb-3">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-3 g-4 px-3">
+
+                <div class="col">
+                    <h6 class="fw-bold">Assistenza</h6>
+
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-dark">Centro
+                                Assistenza</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Ricevi
+                                assistenza per un problema
+                                legato alla sicurezza</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">AirCover</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-dark">Antidiscriminazione</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-dark">Supporto
+                                alla disabilità</a></li>
+                    </ul>
+                    <hr class="d-block d-md-none">
+                </div>
+
+                <div class="col">
+                    <h6 class="fw-bold">Ospitare</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-dark">Apri
+                                un Airbnb</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Proponi
+                                la tua esperienza su
+                                Airbnb</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">AirCover
+                                per gli host</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Risorse
+                                per gli host</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Forum
+                                della community</a></li>
+                    </ul>
+                    <hr class="d-block d-md-none">
+
+                </div>
+
+                <div class="col">
+                    <h6 class="fw-bold">Airbnb</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-dark">2025
+                                Summer Release</a></li>
+
+                        <li><a href="#" class="text-decoration-none text-dark">Newsroom</a>
+                        </li>
+
+                        <li><a href="#" class="text-decoration-none text-dark">Opportunità
+                                di lavoro</a></li>
+
+                        <li><a href="#" class="text-decoration-none text-dark">Investitori</a>
+                        </li>
+
+                        <li><a href="#" class="text-decoration-none text-dark">Gift
+                                card</a></li>
+                    </ul>
+                    <hr class="d-block d-md-none">
+                </div>
+            </div>
+        </div>
+
+        <hr class="d-none d-md-block">
+
+        <div class="container-fluid mt-3 pt-3">
+            <div class="row px-5">
+
+                <div class="col-md-6 order-2 order-md-1">
+
+
+                    <div class="d-flex flex-wrap small align-items-center">
+
+                        <span class="text-nowrap mb-2 mb-md-0 me-2">© 2025 Airbnb, Inc.</span>
+
+                        <span class="text-dark mx-2">&middot;</span>
+
+                        <a href="#" class="text-decoration-none text-dark me-2">Privacy</a>
+                        <span class="text-dark mx-2">&middot;</span>
+
+                        <a href="#" class="text-decoration-none text-dark me-2">Termini</a>
+                        <span class="text-dark mx-2">&middot;</span>
+
+                        <a href="#" class="text-decoration-none text-dark me-2">Mappa del sito</a>
+                        <span class="text-dark mx-2">&middot;</span>
+
+                        <a href="#" class="text-decoration-none text-dark me-2">Dettagli dell'azienda</a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-md-6 order-1 order-md-2 d-flex flex-column flex-md-row justify-content-md-end align-items-md-start mb-3">
+
+                    <div class="d-flex mb-3 mb-md-0 me-md-4 align-items-center">
+                        <span class="me-2"><i class="fa fa-globe"></i></span>
+                        <a href="#" class="text-decoration-none text-dark fw-bold me-3">Italiano (IT)</a>
+                        <span class="fw-bold">€ EUR</span>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-center">
+                        <a href="#" class="text-dark"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark"><i class="fa-brands fa-x-twitter"></i> </a>
+                        <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz4YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
-</html>o
+
+</html>
