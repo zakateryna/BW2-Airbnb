@@ -1,0 +1,207 @@
+:root {
+    --primary-color: rgb(255, 56, 92);
+    --text-color: #222;
+    --light-gray: #ccc;
+    --bg-light: #f7f7f7;
+    --padding-sides: 80px;
+    --header-height: 80px;
+}
+
+/* RESET GENERALE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+/* ========================
+   HEADER DESKTOP
+   ======================== */
+.main-header {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+}
+
+.header-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 var(--padding-sides);
+}
+
+/* SEARCH BAR DESKTOP */
+.search-bar-desktop {
+    display: flex;
+    border: 1px solid var(--light-gray);
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 4px;
+    cursor: pointer;
+}
+
+.search-item {
+    background: none;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.search-item:not(:last-child) .search-label {
+    border-right: 2px solid lightgrey;
+    padding-right: 10px;
+}
+
+.search-item.guests {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 60px;
+    margin-left: 3px;
+}
+
+.search-item.guests .search-label {
+    font-weight: 500;
+    color: white;
+}
+
+.search-label-mobile {
+    display: none;
+}
+
+/* MENU UTENTE */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host-link {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* CUORE NERO CON BORDO BIANCO */
+.heart-btn i {
+    color: black;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-size: 18px;
+}
+
+
+
+
+/* ========================
+   FOOTER E NAV LINK
+   ======================== */
+.title-footer {
+    margin: 30px 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: #555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+h6 {
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    :root {
+        --padding-sides: 24px;
+    }
+
+    .header-content-wrapper {
+        padding: 0 var(--padding-sides);
+        justify-content: flex-start;
+    }
+
+    .logo,
+    .user-menu,
+    .filters-section,
+    .info-bar,
+    .listings-list {
+        display: none;
+    }
+
+    .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 300;
+        background: white;
+
+    }
+
+    .search-bar-desktop {
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        padding: 8px 0;
+    }
+
+
+    .search-item.guests {
+        display: none;
+    }
+
+    .search-item {
+        font-weight: 400;
+        border: none;
+    }
+
+
+    .funnel-text {
+        display: none;
+    }
+
+    .info-row {
+        display: none;
+    }
+
+}
+
+/* FONT PERSONALIZZATO */
+.source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
