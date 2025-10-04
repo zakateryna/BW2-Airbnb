@@ -1,0 +1,202 @@
+:root {
+    --primary-color: rgb(255, 56, 92);
+    --text-color: #222;
+    --light-gray: #ccc;
+    --bg-light: #f7f7f7;
+    --padding-sides: 80px;
+    --header-height: 60px;
+}
+
+/* RESET GENERALE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.heart-btn i {
+    color: black;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-size: 18px;
+}
+
+/* ========================
+   HEADER DESKTOP
+   ======================== */
+   
+.main-header {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+    background: white;
+    position: sticky;
+}
+
+.header-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 var(--padding-sides);
+}
+
+/* MENU UTENTE */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host-link {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.info-tag {
+    font-size: 13px;
+}
+
+.text-end {
+    font-size: 11px;
+}
+
+.text-right {
+    justify-content: end;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.bi-tag {
+    color: rgb(255, 56, 92);
+}
+
+
+/* =========================
+   Layout colonne
+   ========================= */
+
+.cards-column {
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.map-container {
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    max-height: 600px;
+}
+
+/* =========================
+   Carousel cards
+   ========================= */
+.card img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ========================
+   FOOTER E NAV LINK
+   ======================== */
+.title-footer {
+    margin: 30px 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: #555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+h6 {
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    :root {
+        --padding-sides: 24px;
+    }
+
+    .header-content-wrapper {
+        padding: 0 var(--padding-sides);
+        justify-content: flex-start;
+    }
+
+    .user-menu>* {
+        display: none;
+    }
+
+    .main-header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background: white;
+    }
+
+    .info-row {
+        display: none;
+    }
+
+    .map-container {
+        position: relative;
+        top: 0;
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+
