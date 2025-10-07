@@ -8,3 +8,4 @@ Implementazione della Paginazione: Nel commit successivo, è stata sviluppata la
 Commit 1: Creazione della navbar e del pulsante di ricerca di Airbnb (replica pixel-perfect).
 
 Commit 2: Implementazione della paginazione nella pagina dettaglio dell'appartamento.
+"# BuildWeek2" 
