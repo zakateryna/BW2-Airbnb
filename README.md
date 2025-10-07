@@ -10,3 +10,4 @@ Commit 1: Creazione della navbar e del pulsante di ricerca di Airbnb (replica pi
 Commit 2: Implementazione della paginazione nella pagina dettaglio dell'appartamento.
 "# BuildWeek2" 
 "# BuildWeek2" 
+"# BuildWeek2.0" 
