@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airbnb-Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="desktop-header">
+  <div class="container header-container">
+    <div class="header-content">
+      <div class="logo-section">
+        <a href="#" aria-label="Homepage">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1024px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="Airbnb" class="airbnb-logo">
+        </a>
+      </div>
+      <div class="right-menu">
+        <button class="btn-inizia">Diventa un host</button>
+        <button class="btn-globe" aria-label="Scegli lingua e valuta">
+          <ion-icon name="globe"></ion-icon>
+        </button>
+        <div class="user-menu-wrapper" role="button" aria-label="Menu utente">
+          <ion-icon name="menu"></ion-icon>
+        </div>
+        <div class="profile-button" role="button" aria-label="Menu utente">
+          <ion-icon name="person-circle"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container mt-4">
+  <section class="apartment-title-section mb-2">
+    <h1 class="apartment-name-h1">Blarmor Home</h1>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="apartment-details-bar">
+        <span class="rating-value"><i class="bi bi-star-fill"></i> 4.5</span>
+        <span class="dot-separator">·</span>
+        <a href="#" class="details-link">24 recensioni</a>
+        <span class="dot-separator">·</span>
+        <a href="#" class="details-link">Inverness, Scozia, Regno Unito</a>
+      </div>
+      <div class="sharing-icons">
+        <a href="#"><ion-icon name="share-outline"></ion-icon> Condividi</a>
+        <a href="#"><ion-icon name="heart-outline"></ion-icon> Salva</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="./1.webp" alt="Main view of the house"></div>
+      <div class="gallery-item"><img src="./2.webp" alt="Second view"></div>
+      <div class="gallery-item"><img src="./3.webp" alt="Third view"></div>
+      <div class="gallery-item"><img src="./4.webp" alt="Fourth view"></div>
+      <div class="gallery-item"><img src="./5.webp" alt="Fifth view"></div>
+      <button class="btn-show-all-photos"><i class="bi bi-grid-3x3-gap-fill"></i> Mostra tutte le foto</button>
+    </div>
+  </section>
+
+  <section class="details-booking-section mt-5">
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="room-info">
+          <h2 class="section-title">Intera casa · Host: Erica</h2>
+          <p class="text-muted">3 Rooms · Perfect place to visit the Loch Ness and go looking for Nessie.</p>
+        </div>
+        <hr>
+
+        <div class="features-list">
+          <div class="feature-item d-flex align-items-start gap-3 mb-4">
+            <div class="icon-container"><svg width="32px" height="32px" viewBox="-2.16 -2.16 28.32 28.32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_iconCarrier"><g id="Navigation / House_01"><path id="Vector" d="M20 17.0002V11.4522C20 10.9179 19.9995 10.6506 19.9346 10.4019C19.877 10.1816 19.7825 9.97307 19.6546 9.78464C19.5102 9.57201 19.3096 9.39569 18.9074 9.04383L14.1074 4.84383C13.3608 4.19054 12.9875 3.86406 12.5674 3.73982C12.1972 3.63035 11.8026 3.63035 11.4324 3.73982C11.0126 3.86397 10.6398 4.19014 9.89436 4.84244L5.09277 9.04383C4.69064 9.39569 4.49004 9.57201 4.3457 9.78464C4.21779 9.97307 4.12255 10.1816 4.06497 10.4019C4 10.6506 4 10.9179 4 11.4522V17.0002C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74432 19.6452 5.23438 19.8482C5.60192 20.0005 6.06786 20.0005 6.99974 20.0005C7.93163 20.0005 8.39808 20.0005 8.76562 19.8482C9.25568 19.6452 9.64467 19.2555 9.84766 18.7654C9.9999 18.3979 10 17.932 10 17.0001V16.0001C10 14.8955 10.8954 14.0001 12 14.0001C13.1046 14.0001 14 14.8955 14 16.0001V17.0001C14 17.932 14 18.3979 14.1522 18.7654C14.3552 19.2555 14.7443 19.6452 15.2344 19.8482C15.6019 20.0005 16.0679 20.0005 16.9997 20.0005C17.9316 20.0005 18.3981 20.0005 18.7656 19.8482C19.2557 19.6452 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0002Z" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg></div>
+            <div class="features-text"><strong>Casa</strong><span class="text-muted d-block">Avrai a disposizione l'intera proprietà.</span></div>
+          </div>
+          <div class="feature-item d-flex align-items-start gap-3 mb-4">
+            <div class="icon-container"><svg width="32px" height="32px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M121.59 60.83l-13.93-4.49c-8.91-2.94-14.13-10.15-16.58-19.21L84.95 7.27c-.16-.59-.55-1.38-1.75-1.38-1.01 0-1.59.79-1.75 1.38l-6.13 29.87c-2.46 9.06-7.67 16.27-16.58 19.21l-13.93 4.49c-1.97.64-2 3.42-.04 4.09l14.03 4.83c8.88 2.95 14.06 10.15 16.52 19.17l6.14 29.53c.16.59.49 1.65 1.75 1.65c1.33 0 1.59-1.06 1.75-1.65l6.14-29.53c2.46-9.03 7.64-16.23 16.52-19.17l14.03-4.83c1.94-.68 1.91-3.46-.06-4.1zM41.81 86.81c-8.33-2.75-9.09-5.85-10.49-11.08l-3.49-12.24c-.21-.79-2.27-.79-2.49 0L22.97 74.8c-1.41 5.21-4.41 9.35-9.53 11.04l-8.16 3.54c-1.13.37-1.15 1.97-.02 2.35l8.22 2.91c5.1 1.69 8.08 5.83 9.5 11.02l2.37 10.82c.22.79 2.27.79 2.48 0l2.78-10.77c1.41-5.22 3.57-9.37 10.5-11.07l7.72-2.91c1.13-.39 1.12-1.99-.02-2.36l-7-2.56zM59.74 28.14c.56-.19.54-.99-.03-1.15l-7.72-2.08a4.77 4.77 0 0 1-3.34-3.3L45.61 9.06c-.15-.61-1.02-.61-1.17.01l-2.86 12.5a4.734 4.734 0 0 1-3.4 3.37l-7.67 1.99c-.57.15-.61.95-.05 1.15l8.09 2.8c1.45.5 2.57 1.68 3.01 3.15l2.89 11.59c.15.6 1.01.61 1.16 0l2.99-11.63a4.773 4.773 0 0 1 3.04-3.13l8.1-2.72z" fill="#222222"/></svg></div>
+            <div class="features-text"><strong>Metodi di pulizia avanzati</strong><span class="text-muted d-block">L'host si impegna a seguire il nostro processo di pulizia in 5 fasi.</span></div>
+          </div>
+          <div class="feature-item d-flex align-items-start gap-3 mb-4">
+            <div class="icon-container"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="none" id="gps">
+              <path fill="#000" d="m17.32 14.1-.73-.682-.088.094-.06.112zm-9.64 0 .879-.476-.061-.112-.088-.094zm3.061 5.653-.879.477zm3.518 0 .879.477zm3.838-10.156c0 1.478-.571 2.82-1.507 3.82l1.461 1.367a7.57 7.57 0 0 0 2.046-5.187zM12.5 4a5.597 5.597 0 0 1 5.597 5.597h2A7.597 7.597 0 0 0 12.5 2zM6.903 9.597A5.597 5.597 0 0 1 12.5 4V2a7.597 7.597 0 0 0-7.597 7.597zm1.507 3.82a5.57 5.57 0 0 1-1.507-3.82h-2c0 2.005.778 3.83 2.046 5.187zm-1.61 1.16 3.062 5.653 1.759-.953-3.062-5.653zm3.062 5.653c1.135 2.095 4.141 2.095 5.276 0l-1.759-.953a1 1 0 0 1-1.758 0zm5.276 0 3.062-5.653-1.759-.953-3.062 5.653z"></path>
+              <circle cx="12.5" cy="10" r="2" stroke="#000" stroke-width="2"></circle>
+            </svg></div>
+            <div class="features-text"><strong>Inverness</strong><span class="text-muted d-block">5 Kilmore RD</span></div>
+          </div>
+          <div class="feature-item d-flex align-items-start gap-3 mb-4">
+            <div class="icon-container"><svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="calendar"><path d="M12,14a1,1,0,1,0-1-1A1,1,0,0,0,12,14Zm5,0a1,1,0,1,0-1-1A1,1,0,0,0,17,14Zm-5,4a1,1,0,1,0-1-1A1,1,0,0,0,12,18Zm5,0a1,1,0,1,0-1-1A1,1,0,0,0,17,18ZM7,14a1,1,0,1,0-1-1A1,1,0,0,0,7,14ZM19,4H18V3a1,1,0,0,0-2,0V4H8V3A1,1,0,0,0,6,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V10H20ZM20,8H4V7A1,1,0,0,1,5,6H19a1,1,0,0,1,1,1ZM7,18a1,1,0,1,0-1-1A1,1,0,0,0,7,18Z"></path></svg></div>
+            <div class="features-text"><strong>Cancellazione gratuita</strong><span class="text-muted d-block">Aggiungi le date del viaggio per conoscere i dettagli.</span></div>
+          </div>
+          <div class="feature-item d-flex align-items-start gap-3 mb-4">
+            <div class="icon-container"><svg width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M347.621 64c-40.941 0-79.121 14-91.578 44.495C242.5 78 205.408 64 164.466 64 109.265 64 64 89.98 64 143v283h22.14c12.86-26.334 44.238-42 78.325-42 40.224 0 73.877 27.528 81.617 64h19.714c7.739-36.472 41.495-64 81.722-64 34.085 0 61.149 11.666 78.429 42H448V143c0-53.02-45.177-79-100.379-79zM248 410.926C230 385.055 199.27 368 164.5 368c-34.769 0-64.5 10.055-83.5 35.926l-1 .537V141c3-41.825 40.089-61 84.293-61 45.162 0 82.145 18.708 83.363 61.808-.017.729.016 1.459.016 2.192l.328 13.103v253.823zM432 148v255.926C414 378.055 382.269 368 347.5 368c-34.77 0-65.5 17.055-83.5 42.926V144c0-44.112 37.659-64 83.587-64C391.79 80 429 91.175 432 133v15z"></path></svg></div>
+            <div class="features-text"><strong>Regole della casa</strong><span class="text-muted d-block">È vietato organizzare feste, portare animali e fumare.</span></div>
+          </div>
+        </div>
+
+        <hr>
+
+        <section class="contact-form-section">
+          <h2 class="section-title">Contatta l'host o lascia una recensione</h2>
+          <form>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Il tuo nome</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Mario Rossi">
+              </div>
+              <div class="col-md-6">
+                <label for="inputRating" class="form-label">La tua valutazione</label>
+                <div class="rating-stars">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="inputMessage" class="form-label">Messaggio</label>
+              <textarea class="form-control" id="inputMessage" rows="5" placeholder="Il tuo messaggio..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit-message">Invia Messaggio</button>
+          </form>
+        </section>
+
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="booking-card-wrapper">
+          <div class="booking-card">
+            <div class="booking-card-header">
+              <span class="rating-reviews"><i class="bi bi-star-fill"></i> 4.5 · <a href="#" class="details-link">24 recensioni</a></span>
+            </div>
+
+            <div class="booking-card-body">
+              <div class="date-picker">
+                <div class="date-field">
+                  <label for="checkin">CHECK-IN</label>
+                  <input type="text" id="checkin" value="30/09/2025" readonly>
+                </div>
+                <div class="date-field">
+                  <label for="checkout">CHECK-OUT</label>
+                  <input type="text" id="checkout" value="05/10/2025" readonly>
+                </div>
+              </div>
+              <button class="btn-reserve">Verifica disponibilità</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>>
